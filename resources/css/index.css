@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,300&display=swap");
+
+/* HEADER STYLING */
+
+#page-container {
+  font-family: "Poppins";
+}
+
+#nav {
+  width: 100%;
+  background: black;
+  padding: 10px 0px;
+}
+
+#name {
+  color: #458ccb;
+}
+
+#nav-container {
+  font-size: 14px;
+  text-transform: uppercase;
+  display: flex;
+  margin: auto;
+  width: 375px;
+  justify-content: space-between;
+}
+
+#nav-container > a {
+  text-decoration: none;
+  color: #d3d3d3;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* HOME STYLING */
+
+body {
+  overflow-x: hidden;
+}
+
+#home-content:hover {
+  cursor: move;
+}
+
+#home-container {
+  --n: 1;
+  display: flex;
+  margin: auto;
+  overflow-y: hidden;
+  width: 100%;
+  width: calc(var(--n) * 100%);
+  transform: translate(calc(var(--i, 0) / var(--n) * -100%));
+}
+
+.home-items {
+  width: 100%;
+  width: calc(100% / var(--n));
+  user-select: none;
+  pointer-events: none;
+  display: flex;
+  margin: auto;
+  padding: 100px 0px;
+  justify-content: center;
+}
+
+#home-abt-me {
+  max-width: 428px;
+}
+
+#home-sub-header {
+  margin-top: -30px;
+  color: #888888;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+#home-pic {
+  margin-left: 60px;
+}
+
+#home-pic > img {
+  height: auto;
+  width: 200px;
+  border-radius: 78px;
+  box-shadow: 4px 9px #888888;
+}
+
+#home-swipe {
+  color: #458ccb;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  animation: bounce 3s infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(25px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* #home-item-2 {
+  display: flex;
+  margin: auto;
+  padding: 100px 0px;
+  justify-content: flex-start;
+  max-width: 688px;
+  flex-direction: column;
+} */
+
+/* #skills-container {
+  display: flex;
+} */
+
+/* WORK STYLING */
+
+#work-content {
+  background: #e0f2fb;
+}
+
+#work-header {
+  min-width: 688px;
+}
+
+#work-container {
+  display: flex;
+  margin: auto;
+  padding: 100px 0px;
+  justify-content: flex-start;
+  max-width: 688px;
+  flex-direction: column;
+}
+
+#work-sub-header {
+  margin-top: -30px;
+  color: #888888;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.work-item {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 50px 0px;
+}
+
+#axos-logo {
+  height: auto;
+  width: 175px;
+  filter: drop-shadow(4px 4px 4px #888888);
+}
+
+#cql-logo {
+  height: auto;
+  width: 250px;
+}
+
+.work-text {
+  max-width: 350px;
+  align-self: flex-start;
+}
+
+.work-time {
+  color: #888888;
+}
+
+/* FOOTER STYLING */
+
+#footer {
+  background: #171717;
+}
+
+#footer-container {
+  display: flex;
+  margin: auto;
+  padding: 50px 0px;
+  color: #d3d3d3;
+  margin-top: 25px;
+  width: 50%;
+  justify-content: space-around;
+}
+
+#ft-explore > a {
+  text-decoration: none;
+  color: #d3d3d3;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.ft-title {
+  color: #458ccb;
+}
+
+#ft-about {
+  width: 152px;
+}
