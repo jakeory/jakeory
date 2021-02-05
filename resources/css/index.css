@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,300&display=swap");
 
+/* Simple scroll solution */
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* HEADER STYLING */
 
 #page-container {
@@ -8,8 +14,10 @@
 
 #nav {
   width: 100%;
-  background: black;
+  background: #171717;
   padding: 10px 0px;
+  position: fixed;
+  z-index: 100;
 }
 
 #name {
@@ -45,8 +53,8 @@ body {
 #home-container {
   --n: 1;
   display: flex;
-  margin: auto;
   overflow-y: hidden;
+  margin: auto;
   width: 100%;
   width: calc(var(--n) * 100%);
   transform: translate(calc(var(--i, 0) / var(--n) * -100%));
@@ -58,8 +66,8 @@ body {
   user-select: none;
   pointer-events: none;
   display: flex;
-  margin: auto;
-  padding: 100px 0px;
+  padding-top: 150px;
+  padding-bottom: 100px;
   justify-content: center;
 }
 
@@ -105,18 +113,68 @@ body {
   }
 }
 
-/* #home-item-2 {
+#home-item-2 {
   display: flex;
   margin: auto;
   padding: 100px 0px;
   justify-content: flex-start;
   max-width: 688px;
   flex-direction: column;
-} */
+}
 
-/* #skills-container {
+#skills-container {
   display: flex;
-} */
+}
+
+.s-skills {
+  border-bottom: 2px solid #458ccb;
+  margin-right: 12px;
+}
+
+.e-skills {
+  border-bottom: 2px solid #458ccb;
+  margin-right: 12px;
+}
+
+#strong-skills-container {
+  margin-right: 3%;
+}
+
+#passions-text {
+  max-width: 600px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+  .home-items {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+#home-abt-me {
+    order: 2;
+    max-width: 325px;
+}
+#home-pic {
+   margin-left: 0;
+}
+#home-item-2 {
+    flex-direction: column;
+}
+#strong-skills-container {
+  margin-right: 0;
+}
+#skills-container {
+    flex-direction: column;
+        max-width: 360px;
+}
+#passions-text {
+  max-width: 325px;
+}
+}
+
+
 
 /* WORK STYLING */
 
@@ -150,12 +208,20 @@ body {
   justify-content: space-between;
   align-content: center;
   padding: 50px 0px;
+  align-items: center;
 }
 
 #axos-logo {
   height: auto;
   width: 175px;
   filter: drop-shadow(4px 4px 4px #888888);
+}
+
+#uproot-logo {
+  height: auto;
+  width: 250px;
+  filter: drop-shadow(4px 4px 4px #888888);
+  border-radius: 25px;
 }
 
 #cql-logo {
@@ -171,6 +237,89 @@ body {
 .work-time {
   color: #888888;
 }
+
+#home-item-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  #work-container {
+    flex-direction: column;
+}
+  #work-header {
+    min-width: 0;
+    text-align: center;
+}
+  .work-item {
+    flex-direction: column;
+    text-align: center;
+}
+  .work-text {
+    align-self: center;
+    order: 1;
+}
+  .work-img {
+    order: 2;
+  }
+}
+
+/* CONTACT STYLING */
+
+#contact-header {
+  min-width: 688px;
+}
+
+#contact-container {
+  display: flex;
+  margin: auto;
+  padding: 100px 0px;
+  justify-content: flex-start;
+  max-width: 688px;
+  flex-direction: column;
+}
+
+#contact-sub-header {
+  margin-top: -30px;
+  color: #888888;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+#contact-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-item {
+    margin-right: 50px;
+}
+
+.contact-item-title {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #contact-container {
+    margin: 0;
+  }
+  #contact-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+  #contact-header {
+    text-align: center;
+  }
+  .contact-item {
+    margin-right: 0;
+}
+
+}
+
+
 
 /* FOOTER STYLING */
 
@@ -201,4 +350,23 @@ body {
 
 #ft-about {
   width: 152px;
+}
+
+.social-icon {
+  color: #d3d3d3;
+}
+
+#ig-icon {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  #footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+  .ft-title {
+  text-align: center;
+}
 }

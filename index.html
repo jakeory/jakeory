@@ -18,14 +18,11 @@
       <div id="nav">
         <div id="nav-container">
           <a id="name" href="#home-content"
-            ><p class="header-item" id="name">Jake Ory</p></a
+            ><p class="header-item local-link" id="name">Jake Ory</p></a
           >
-          <a href="#work-content"><p class="header-item" id="work">Work</p></a>
-          <a href="#interests-content"
-            ><p class="header-item" id="interests">Interests</p></a
-          >
+          <a href="#work-content"><p class="header-item local-link" id="work">Work</p></a>
           <a href="#contact-content"
-            ><p class="header-item" id="contact">Contact</p></a
+            ><p class="header-item local-link" id="contact">Contact</p></a
           >
         </div>
       </div>
@@ -35,7 +32,7 @@
           <div class="home-items" id="home-item-1">
             <div id="home-abt-me">
               <h1>Hi there, I'm Jake.</h1>
-              <p id="home-sub-header">Frontend Engineer</p>
+              <p id="home-sub-header">Software Engineer</p>
               <p id="home-abt-me">
                 Through passion, expertise, and consistent learning, I build
                 cool things on the web. I’m largely framework agnostic, but love
@@ -54,7 +51,7 @@
             </div>
           </div>
           <div class="home-items" id="home-item-2">
-            <h1>Skills</h1>
+            <h2 id="skills-title">Skills</h2>
             <div id="skills-container">
               <div id="strong-skills-container">
                 <div id="ss-header">
@@ -63,11 +60,11 @@
                 <div id="strong-skills">
                   <span class="s-skills">Javascript (ES6+)</span>
                   <span class="s-skills">React</span>
-                  <span class="s-skills">Responsive Web Design</span>
-                  <span class="s-skills">Node.JS/Express</span>
                   <span class="s-skills">HTML</span>
-                  <span class="s-skills">CSS</span>
+                  <span class="s-skills">CSS3</span>
                   <span class="s-skills">SCSS</span>
+                  <span class="s-skills">Jest</span>
+                  <span class="s-skills">React-testing-library</span>
                   <span class="s-skills">Git</span>
                 </div>
               </div>
@@ -76,17 +73,24 @@
                   <h3>Experienced</h3>
                 </div>
                 <div id="exp-skills">
+                  <span class="e-skills">Typescript</span>
+                  <span class="e-skills">GraphQL</span>
+                  <span class="e-skills">Ionic</span>
                   <span class="e-skills">Webpack</span>
-                  <span class="e-skills">TDD (Jest/Puppeteer)</span>
-                  <span class="e-skills">SQL</span>
-                  <span class="e-skills">Web Sockets</span>
-                  <span class="e-skills">AWS (S3/Lambda)</span>
+                  <span class="e-skills">Node.JS/Express</span>
+                  <span class="e-skills">Figma</span>
+                  <span class="e-skills">Agile</span>
+                  <span class="e-skills">Scrum</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="home-items" id="home-item-3">
-            <h1>Passions</h1>
+            <h2>Passions</h2>
+            <p id="passions-text">
+              Corgi Walker, Catan Settler, Taco Lover, Dallas Sports Fan, Top of
+              the Bell Curve Basketball(er) & Golfer
+            </p>
           </div>
         </div>
       </div>
@@ -115,14 +119,28 @@
               />
             </div>
           </div>
+
           <div class="work-item">
             <div class="work-img">
               <img
-                id="cql-logo"
-                src="https://i.imgur.com/alJfVMj.png"
-                alt="Chaos Koala logo"
+                id="uproot-logo"
+                src="https://i.imgur.com/NJbfw4i.png"
+                alt="uproot logo"
               />
             </div>
+            <div class="work-text">
+              <h3 class="work-title">Uproot</h3>
+              <p class="work-desc">
+                At Uproot, a non-profit aimed at driving social change, I am
+                working as a software engineer building out the front-end using
+                primarily React, Typescript, and ionic. <br /><br />
+                Also Implemented tests with Jest and React-testing-library to create a stable codebase that ensures the quality of the existing code and facilitates simpler integrations of future features, while utilizing a data mocking library for TS types for more efficient testing.
+              </p>
+              <p class="work-time">10/2020-Current</p>
+            </div>
+          </div>
+
+          <div class="work-item">
             <div class="work-text">
               <h3 class="work-title">ChaosQoaLa</h3>
               <p class="work-desc">
@@ -134,34 +152,56 @@
               </p>
               <p class="work-time">6/2019-4/2020</p>
             </div>
+            <div class="work-img">
+              <img
+                id="cql-logo"
+                src="https://i.imgur.com/alJfVMj.png"
+                alt="Chaos Koala logo"
+              />
+            </div>
           </div>
         </div>
       </div>
 
-      <div id="interests-content">
-        <div id="interests-container"></div>
-      </div>
-
       <div id="contact-content">
-        <div id="contact-container"></div>
+        <div id="contact-container">
+          <div id="contact-header">
+            <h2 id="contact-title">Contact</h2>
+            <p id="contact-sub-header">Feel free to reach out</p>
+          </div>
+          <div id="contact-content">
+            <div class="contact-item" id="cell-info">
+            <p class="contact-item-title">Phone/Cell</p>
+            <p>925-303-8872</p>
+            </div>
+            <div class="contact-item" id="email-info">
+            <p class="contact-item-title">Email</p>
+            <p>jacobtory@yahoo.com <br>(yes, yahoo lol)</p>
+            </div>
+            <div class="contact-item" id="li-info">
+            <p class="contact-item-title">LinkedIn</p>
+            <p><a alt="jake ory linkein" href="https://www.linkedin.com/in/jacobory/">linkedin.com/in/jacobory</a></p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div id="footer">
         <div id="footer-container">
-          <div id="ft-about">
+          <div class="footer-item" id="ft-about">
             <p class="ft-title">About</p>
             <p>Handcrafted with HTML, Vanilla Javascript, & CSS.</p>
           </div>
-          <div id="ft-explore">
+          <div class="footer-item" id="ft-explore">
             <p class="ft-title">Explore</p>
-            <a id="name" href="#home-content"><p class="ft-link">Home</p></a>
-            <a href="#work-content"><p class="ft-link">Work</p></a>
-            <a href="#interests-content"><p class="ft-link">Interests</p></a>
-            <a href="#contact-content"><p class="ft-link">Contact</p></a>
+            <a id="name" href="#home-content"><p class="ft-link local-link">Home</p></a>
+            <a href="#work-content"><p class="ft-link local-link">Work</p></a>
+            <a href="#contact-content"><p class="ft-link local-link">Contact</p></a>
           </div>
-          <div id="ft-social">
+          <div class="footer-item" id="ft-social">
             <p class="ft-title">Social</p>
-            <p>Instagram, Twitter, GitHub</p>
+            <a id="twitter-icon" class="social-icon" alt="jake ory twitter acount" href="https://twitter.com/Jake_ory"><i class="fab fa-twitter fa-2x"></i></a>
+            <a id="ig-icon" class="social-icon" alt="jake ory instagram acount" href="https://www.instagram.com/jake_ory"><i class="fab fa-instagram fa-2x"></i></a>
           </div>
         </div>
       </div>

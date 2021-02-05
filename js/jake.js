@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+  
+  //HEADER SWIPE LOGIC
   const _C = document.querySelector("#home-container"),
     N = _C.children.length,
     NF = 30;
